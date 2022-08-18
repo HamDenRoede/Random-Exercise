@@ -61,6 +61,7 @@ namespace RandomExercises
         static void switchCount()
         {
 
+            //Her sætter vi vores variabler, som skal holde styr på hvilke terningslag vi får
             int antalEttere = 0;
             int antalToere = 0;
             int antalTreere = 0;
@@ -68,18 +69,22 @@ namespace RandomExercises
             int antalFemmere = 0;
             int antalSeksere = 0;
 
+            //Her setter vi funktionalitet op til at motage input fra user
+            //Brugeren vil som start blive bedt om at indtaste hvor mange terningekast de vil have
             string userInput;
-
             Console.Write("Enter diceroll amount: ");
             userInput = Console.ReadLine();
             int diceRoll = Convert.ToInt32(userInput);
 
+            //Her starter vores loop, som vil køre lige så mange gange, som userens input ("i <= diceRoll;")
             for (int i = 1; i <= diceRoll; i++)
             {
 
+                //Her sætter vi vores terning op. Dette er en 6-sidet terning
                 Random value = new Random();
                 int rand = value.Next(1, 7);
 
+                //Her sætter vi vores switchcases up. De determinerer hvad der skal ske på baggrund af terningekastets udfald
                 switch (rand)
                 {
                     case 1:
@@ -108,6 +113,8 @@ namespace RandomExercises
                         break;
                 }
             }
+
+            //Her udskrives det forskellige terningekast udfald til konsollen
             Console.WriteLine("");
             Console.WriteLine("Du slog ");
             Console.WriteLine("{0} ettere", antalEttere);
@@ -118,6 +125,7 @@ namespace RandomExercises
             Console.WriteLine("{0} Seksere", antalSeksere);
             Console.WriteLine("");
 
+            //Her sættes variabler op til brug af procentudregning
             double resultat1 = antalEttere;
             double resultat2 = antalToere;
             double resultat3 = antalTreere;
@@ -125,6 +133,7 @@ namespace RandomExercises
             double resultat5 = antalFemmere;
             double resultat6 = antalSeksere;
 
+            //Her tages resultatet af alle terningkast. En procentdel gives til hvert udfald
             Console.Write("Hvor mange procent er hver terning :\n \n");
 
             Console.WriteLine("Ettere: {0:N2}", (resultat1 / diceRoll) * 100);
@@ -145,6 +154,7 @@ namespace RandomExercises
             Console.WriteLine("Seksere: {0:N2}", (resultat6 / diceRoll) * 100);
             resultat3 = Convert.ToDouble(antalSeksere);
 
+            //Koden slutter her, forhåbentlig uden problemer
             Console.WriteLine("");
             Console.WriteLine("Done!");
             Console.WriteLine("Press any key to teminate.");
