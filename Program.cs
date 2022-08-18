@@ -84,30 +84,29 @@ namespace RandomExercises
                 switch (rand)
                 {
                     case 1:
-                            antalEttere++;
+                        antalEttere++;
                         Console.WriteLine("Du slog en etter");
-                            break;
+                        break;
                     case 2:
-                            antalToere++;
+                        antalToere++;
                         Console.WriteLine("Du slog en toer");
                         break;
                     case 3:
-                            antalTreere++;
+                        antalTreere++;
                         Console.WriteLine("Du slog en treer");
                         break;
                     case 4:
-                            antalFirere++;
+                        antalFirere++;
                         Console.WriteLine("Du slog en firer");
                         break;
                     case 5:
-                            antalFemmere++;
+                        antalFemmere++;
                         Console.WriteLine("Du slog en femmer");
                         break;
                     case 6:
-                            antalSeksere++;
+                        antalSeksere++;
                         Console.WriteLine("Du slog en sekser");
                         break;
-                        
                 }
             }
             Console.WriteLine("");
