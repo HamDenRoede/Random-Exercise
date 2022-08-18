@@ -60,19 +60,20 @@ namespace RandomExercises
 
         static void switchCount()
         {
-            
-            for (int i = 1; i <= 10; i++)
+
+
+            int antalEttere = 0;
+            int antalToere = 0;
+            int antalTreere = 0;
+            int antalFirere = 0;
+            int antalFemmere = 0;
+            int antalSeksere = 0;
+
+            for (int i = 1; i <= 300; i++)
             {
 
                 Random value = new Random();
                 int rand = value.Next(1, 7);
-
-                int antalEttere = 0;
-                int antalToere = 0;
-                int antalTreere = 0;
-                int antalFirere = 0;
-                int antalFemmere = 0;
-                int antalSeksere = 0;
 
                 //her kastes vores terning. terningen er sekssidet. Det kan ses i "value.Next(1, 7);"
                 //int terning = value.Next(1, 7);
@@ -109,6 +110,15 @@ namespace RandomExercises
                         
                 }
             }
+            Console.WriteLine("");
+            Console.WriteLine("Du slog ");
+            Console.WriteLine("{0} ettere", antalEttere);
+            Console.WriteLine("{0} Toere", antalToere);
+            Console.WriteLine("{0} Treere", antalTreere);
+            Console.WriteLine("{0} Firere", antalFirere);
+            Console.WriteLine("{0} Femmere", antalFemmere);
+            Console.WriteLine("{0} Seksere", antalSeksere);
+
         }
     }
 }
