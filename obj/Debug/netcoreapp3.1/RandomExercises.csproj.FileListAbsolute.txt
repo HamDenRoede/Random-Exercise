@@ -1,0 +1,14 @@
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\bin\Debug\netcoreapp3.1\RandomExercises.exe
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\bin\Debug\netcoreapp3.1\RandomExercises.deps.json
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\bin\Debug\netcoreapp3.1\RandomExercises.runtimeconfig.json
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\bin\Debug\netcoreapp3.1\RandomExercises.runtimeconfig.dev.json
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\bin\Debug\netcoreapp3.1\RandomExercises.dll
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\bin\Debug\netcoreapp3.1\RandomExercises.pdb
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\obj\Debug\netcoreapp3.1\RandomExercises.csproj.AssemblyReference.cache
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\obj\Debug\netcoreapp3.1\RandomExercises.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\obj\Debug\netcoreapp3.1\RandomExercises.AssemblyInfoInputs.cache
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\obj\Debug\netcoreapp3.1\RandomExercises.AssemblyInfo.cs
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\obj\Debug\netcoreapp3.1\RandomExercises.csproj.CoreCompileInputs.cache
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\obj\Debug\netcoreapp3.1\RandomExercises.dll
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\obj\Debug\netcoreapp3.1\RandomExercises.pdb
+C:\Users\Jonas\source\repos\RandomExercises\RandomExercises\obj\Debug\netcoreapp3.1\RandomExercises.genruntimeconfig.cache
