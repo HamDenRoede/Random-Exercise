@@ -4,7 +4,7 @@ namespace RandomExercises
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             //her er vores to metode-kald
             //Terning();
@@ -61,7 +61,6 @@ namespace RandomExercises
         static void switchCount()
         {
 
-
             int antalEttere = 0;
             int antalToere = 0;
             int antalTreere = 0;
@@ -73,9 +72,9 @@ namespace RandomExercises
 
             Console.Write("Enter diceroll amount: ");
             userInput = Console.ReadLine();
-            int diceRolls = Convert.ToInt32(userInput);
+            int diceRoll = Convert.ToInt32(userInput);
 
-            for (int i = 1; i <= diceRolls; i++)
+            for (int i = 1; i <= diceRoll; i++)
             {
 
                 Random value = new Random();
@@ -117,9 +116,38 @@ namespace RandomExercises
             Console.WriteLine("{0} Firere", antalFirere);
             Console.WriteLine("{0} Femmere", antalFemmere);
             Console.WriteLine("{0} Seksere", antalSeksere);
+            Console.WriteLine("");
 
-            //double resultat = diceRolls
+            double resultat1 = antalEttere;
+            double resultat2 = antalToere;
+            double resultat3 = antalTreere;
+            double resultat4 = antalFirere;
+            double resultat5 = antalFemmere;
+            double resultat6 = antalSeksere;
 
+            Console.Write("Hvor mange procent er hver terning :\n \n");
+
+            Console.WriteLine("Ettere: {0:N2}", (resultat1 / diceRoll) * 100);
+            resultat1 = Convert.ToDouble(antalEttere);
+
+            Console.WriteLine("Toere: {0:N2}", (resultat2 / diceRoll) * 100);
+            resultat2 = Convert.ToDouble(antalToere);
+
+            Console.WriteLine("Treere: {0:N2}", (resultat3 / diceRoll) * 100);
+            resultat3 = Convert.ToDouble(antalTreere);
+
+            Console.WriteLine("Firere: {0:N2}", (resultat4 / diceRoll) * 100);
+            resultat3 = Convert.ToDouble(antalFirere);
+
+            Console.WriteLine("Femmere: {0:N2}", (resultat5 / diceRoll) * 100);
+            resultat3 = Convert.ToDouble(antalFemmere);
+
+            Console.WriteLine("Seksere: {0:N2}", (resultat6 / diceRoll) * 100);
+            resultat3 = Convert.ToDouble(antalSeksere);
+
+            Console.WriteLine("");
+            Console.WriteLine("Done!");
+            Console.WriteLine("Press any key to teminate.");
             Console.ReadKey();
         }
     }
