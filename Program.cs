@@ -4,8 +4,6 @@ namespace RandomExercises
 {
     class Program
     {
-        static Random value = new Random();
-
         static void Main(string[] args)
         {
             Terning();
@@ -13,15 +11,28 @@ namespace RandomExercises
 
         static void Terning()
         {
+            Random value = new Random();
+
+           
             
 
-            for (int i = 1; i <= 10; i++)
+            int sixDice = 0;
+            string indicator = " ";
+            do
             {
-                Random value = new Random();
                 int terning = value.Next(1, 7);
                 Console.WriteLine(terning);
+                if ("6".Contains(indicator))
+                {
+                    sixDice++;
+                }
+                for (int i = 1; i <= 10; i++)
+                {
 
-            }
+                    //int terning = value.Next(1, 7);
+                    Console.WriteLine(terning);
+                }
+            } while (sixDice == 6);
         }
     }
 }
