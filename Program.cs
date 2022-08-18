@@ -69,17 +69,17 @@ namespace RandomExercises
             int antalFemmere = 0;
             int antalSeksere = 0;
 
-            for (int i = 1; i <= 300; i++)
+            string userInput;
+
+            Console.Write("Enter diceroll amount: ");
+            userInput = Console.ReadLine();
+            int diceRolls = Convert.ToInt32(userInput);
+
+            for (int i = 1; i <= diceRolls; i++)
             {
 
                 Random value = new Random();
                 int rand = value.Next(1, 7);
-
-                //her kastes vores terning. terningen er sekssidet. Det kan ses i "value.Next(1, 7);"
-                //int terning = value.Next(1, 7);
-                //int startValue = 1;
-                //int input = int.Parse(Console.ReadLine());
-                //Console.WriteLine(value);
 
                 switch (rand)
                 {
@@ -119,6 +119,9 @@ namespace RandomExercises
             Console.WriteLine("{0} Femmere", antalFemmere);
             Console.WriteLine("{0} Seksere", antalSeksere);
 
+            //double resultat = diceRolls
+
+            Console.ReadKey();
         }
     }
 }
